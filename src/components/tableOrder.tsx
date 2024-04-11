@@ -6,7 +6,7 @@ const TableOrder = ({number}:{number: number}) => {
       <div className="flex items-center gap-4">
         <img
           alt=""
-          src="https://images.unsplash.com/photo-1614644147724-2d4785d69962?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80"
+          src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           className="size-16 rounded-full object-cover"
         />
 
@@ -27,7 +27,7 @@ const TableOrder = ({number}:{number: number}) => {
       </div>
       <ul className="mt-4 space-y-2">
         {Array.from({ length: number }).map((_, index) => (
-          <li>
+          <li key={index}>
             <a
               href="#"
               className="border-gray-700 block h-full rounded-lg border p-4 hover:border-pink-600"
